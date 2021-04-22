@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+final class LoginState: ObservableObject {
+    var controller: LoginViewController?
+    
+    @Published var email = ""
+    @Published var password = ""
+    @Published var isAuth: Bool = false
+}

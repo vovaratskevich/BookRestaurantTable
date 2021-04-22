@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var Email = ""
-    @State var Password = ""
+    //@State var email = ""
+   // @State var password = ""
+    @ObservedObject var state:LoginState
     var body: some View {
         VStack (spacing: 40)  {
                     
@@ -29,15 +30,11 @@ struct LoginView: View {
                     //.padding(.bottom)
                     .frame(width: 327, height: 24)
                 
-                TextField("", text: $Email)
-                    .frame(width: 24, height: 24)
-                    .padding(.vertical, 12)
-                    .padding(.leading, 287)
-                    .padding(.trailing, 16)
+                TextField("", text: $state.email)
                     .frame(width: 327, height: 48)
                     .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                     .cornerRadius(8)
-                    .padding(.top, 1)
+             
                 
                 Text("Password")
                     .foregroundColor(.gray)
@@ -49,18 +46,17 @@ struct LoginView: View {
                     .frame(width: 327, height: 24)
                     .padding(.top,15)
                 
-                TextField("", text: $Password)
-                    .frame(width: 24, height: 24)
-                    .padding(.vertical, 12)
-                    .padding(.leading, 287)
-                    .padding(.trailing, 16)
+                TextField("", text: $state.password)
                     .frame(width: 327, height: 48)
                     .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                     .cornerRadius(8)
+                
+
+                    
 
                 
                 Button(action: {
-                    // What to perform
+                    state.controller?.authVerification(email: state.email, password: state.password)
                 }) {
                     Text("Sign in")
                         .foregroundColor(.white)
@@ -80,13 +76,14 @@ struct LoginView: View {
                     
                     Button(action: {
                         // What to perform
+                        state.controller?.goToRegistration()
                     }) {
                     Text("Sign up")
                     .font(.footnote)
+                    .foregroundColor(.black)
                     
                     }
                 }
-                
                 .padding(.top,30)
             }
             .padding(.horizontal, 10)
@@ -108,6 +105,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(state: LoginState())
     }
 }

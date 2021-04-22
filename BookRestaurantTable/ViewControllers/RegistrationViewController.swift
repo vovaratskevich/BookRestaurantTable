@@ -1,17 +1,17 @@
 //
-//  SplashscreenViewController.swift
+//  LoginViewController.swift
 //  BookRestaurantTable
 //
-//  Created by user on 22.04.2021.
+//  Created by user on 20.04.2021.
 //
 
 import UIKit
 import SwiftUI
 
-class SplashscreenViewController: UIHostingController<SplashscreenView> {
-    private let state = SplashscreenState()
-        init(){
-        let view = SplashscreenView(state:state)
+class RegistrationViewController: UIHostingController<RegistrationView> {
+    private let state = RegistrationState()
+       init(){
+        let view = RegistrationView(state:state)
         super.init(rootView: view)
         state.controller = self
 
@@ -55,6 +55,7 @@ class SplashscreenViewController: UIHostingController<SplashscreenView> {
             //controller.setViewControllers([homeController,ordersController,accountController], animated: true)
             sceneDelegate.window?.rootViewController = controller
             sceneDelegate.window?.makeKeyAndVisible()
+           
         }
     }
     
@@ -63,4 +64,17 @@ class SplashscreenViewController: UIHostingController<SplashscreenView> {
 
         // Do any additional setup after loading the view.
     }
+
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

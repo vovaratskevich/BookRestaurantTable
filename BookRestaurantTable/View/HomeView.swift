@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var state: HomeState
     var body: some View {
         VStack (alignment:.leading, spacing: 10)  {
             HStack {
@@ -161,6 +162,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(state: HomeState())
     }
 }

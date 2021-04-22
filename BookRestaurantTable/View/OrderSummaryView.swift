@@ -9,10 +9,25 @@ import SwiftUI
 
 struct OrderSummaryView: View {
     var body: some View {
-        VStack {
+        VStack (spacing: 0){
            
-
-            ZStack (alignment: .top) {
+            
+                HStack{
+                    Button(action:{
+                        // What to perform
+                    })
+                    {
+                        Image(uiImage: #imageLiteral(resourceName: "Union"))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 24, height: 24)
+                    }
+                    Spacer()
+                }
+                .padding(.leading)
+            
+            Spacer()
+            VStack () {
                 Image(uiImage: #imageLiteral(resourceName: "Frame 107"))
                     .resizable()
                     .scaledToFit()
@@ -26,17 +41,12 @@ struct OrderSummaryView: View {
                     .font(.title3)
                     .multilineTextAlignment(.center)
                     .padding(.vertical, 10)
-                    //.frame(width: 343, alignment: .top)
-                    //.tracking(0.38)
-                    //.lineSpacing(25)
 
                     Text("We’ll wait for you on time.")
                     .font(.body)
                     .multilineTextAlignment(.center)
-                    //.frame(width: 343, alignment: .top)
-                    //.lineSpacing(22)
             }
-            .padding(.bottom, 200)
+            .padding(.bottom, 250)
             
             Button(action: {
                 // What to perform
@@ -59,8 +69,8 @@ struct OrderSummaryView: View {
             
             
         }
-        //.padding(.top, 44)
-        //.padding(.bottom, 50)
+        
+        .padding(.top)
         .frame(
               minWidth: 0,
               maxWidth: .infinity,

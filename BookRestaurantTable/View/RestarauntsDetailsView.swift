@@ -173,7 +173,7 @@ struct RestarauntsDetailsView: View {
             .padding(.top)
             
         }
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.top)
     }
 }
 

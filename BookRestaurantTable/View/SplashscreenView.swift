@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct SplashscreenView: View {
-    //@ObservedObject var state:SplashscreenState
+    @ObservedObject var state: SplashscreenState
     var body: some View {
         
         VStack (spacing: 80)  {
@@ -22,7 +22,7 @@ struct SplashscreenView: View {
             //Spacer(minLength: 1)
             VStack(spacing: 8) {
                 Button(action: {
-                    // What to perform
+                    self.state.controller?.goToLogin()
                 }) {
                     ZStack {
                         Image(uiImage: #imageLiteral(resourceName: "Subtract"))
@@ -128,6 +128,6 @@ struct SplashscreenView: View {
 
 struct SplashscreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashscreenView()
+        SplashscreenView(state: SplashscreenState())
     }
 }

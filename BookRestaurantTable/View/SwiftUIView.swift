@@ -13,7 +13,7 @@ struct SwiftUIView: View {
         VStack() {
             VStack(spacing: 18) {
                 Ellipse()
-                .fill(Color(red: 1, green: 0, blue: 0.1, opacity: 0.50))
+                //.fill(Color(red: 1, green: 0, blue: 0.1, opacity: 0.50))
                 .frame(width: 96, height: 96)
                 .overlay(Ellipse().stroke(Color.white, lineWidth: 4))
 

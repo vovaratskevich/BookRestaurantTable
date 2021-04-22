@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CE060991261721C00005E066 /* SplashscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE060990261721C00005E066 /* SplashscreenView.swift */; };
-		CE6BA92F26298509004F014C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BA92E26298509004F014C /* SwiftUIView.swift */; };
+		CE207EC3263189C500283BA1 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE207EC2263189C500283BA1 /* OrdersView.swift */; };
+		CE7431192631D123001F509A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7431182631D123001F509A /* LoginViewController.swift */; };
+		CE743128263203B2001F509A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE743127263203B2001F509A /* RegistrationViewController.swift */; };
+		CE74312B26320435001F509A /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74312A26320435001F509A /* RegistrationViewModel.swift */; };
+		CE74313126321270001F509A /* SplashscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74313026321270001F509A /* SplashscreenViewController.swift */; };
+		CE74313426321910001F509A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74313326321910001F509A /* HomeViewController.swift */; };
+		CE7431372632193E001F509A /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7431362632193E001F509A /* OrdersViewController.swift */; };
+		CE74313A2632195F001F509A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7431392632195F001F509A /* AccountViewController.swift */; };
+		CE74313D2632197D001F509A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74313C2632197D001F509A /* HomeViewModel.swift */; };
+		CE7431402632198B001F509A /* OrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74313F2632198B001F509A /* OrdersViewModel.swift */; };
+		CE7431432632199B001F509A /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7431422632199B001F509A /* AccountViewModel.swift */; };
+		CE743149263229F8001F509A /* SelectFoodViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE743148263229F8001F509A /* SelectFoodViewView.swift */; };
+		CE74314C26322A1E001F509A /* BookingHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE74314B26322A1E001F509A /* BookingHistoryView.swift */; };
 		CE773F38262F4366004A55B1 /* FoodCategoriesItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773F37262F4366004A55B1 /* FoodCategoriesItemView.swift */; };
 		CE773F3D262F5E55004A55B1 /* RestarauntItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773F3C262F5E55004A55B1 /* RestarauntItemView.swift */; };
 		CE773F41262F79D6004A55B1 /* DineInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773F40262F79D6004A55B1 /* DineInView.swift */; };
-		CE773F46262F7AC7004A55B1 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773F45262F7AC7004A55B1 /* SplashScreenViewController.swift */; };
-		CE773F49262F7F38004A55B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773F48262F7F38004A55B1 /* LoginViewController.swift */; };
-		CE773F4C262F7F51004A55B1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773F4B262F7F51004A55B1 /* RegisterViewController.swift */; };
 		CE91C0902615B4E2004C110A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91C08F2615B4E2004C110A /* AppDelegate.swift */; };
 		CE91C0922615B4E2004C110A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91C0912615B4E2004C110A /* SceneDelegate.swift */; };
 		CE91C0942615B4E2004C110A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91C0932615B4E2004C110A /* ViewController.swift */; };
@@ -23,7 +32,7 @@
 		CE91C09C2615B4E3004C110A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE91C09B2615B4E3004C110A /* Assets.xcassets */; };
 		CE91C09F2615B4E3004C110A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE91C09D2615B4E3004C110A /* LaunchScreen.storyboard */; };
 		CEB13CB0262D786600E32913 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB13CAF262D786600E32913 /* TestView.swift */; };
-		CECC140B262E3077002B90BD /* Test1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC140A262E3077002B90BD /* Test1View.swift */; };
+		CEBBBF1D263169BA005C0FCB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBBBF1C263169BA005C0FCB /* AccountView.swift */; };
 		CECC1411262E5766002B90BD /* SplashscreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC1410262E5766002B90BD /* SplashscreenViewModel.swift */; };
 		CECC1416262E57BF002B90BD /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC1415262E57BF002B90BD /* LoginViewModel.swift */; };
 		CECC1420262E5A02002B90BD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC141F262E5A02002B90BD /* HomeView.swift */; };
@@ -37,13 +46,22 @@
 
 /* Begin PBXFileReference section */
 		CE060990261721C00005E066 /* SplashscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenView.swift; sourceTree = "<group>"; };
-		CE6BA92E26298509004F014C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		CE207EC2263189C500283BA1 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		CE7431182631D123001F509A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE743127263203B2001F509A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		CE74312A26320435001F509A /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		CE74313026321270001F509A /* SplashscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenViewController.swift; sourceTree = "<group>"; };
+		CE74313326321910001F509A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE7431362632193E001F509A /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		CE7431392632195F001F509A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		CE74313C2632197D001F509A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CE74313F2632198B001F509A /* OrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewModel.swift; sourceTree = "<group>"; };
+		CE7431422632199B001F509A /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		CE743148263229F8001F509A /* SelectFoodViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodViewView.swift; sourceTree = "<group>"; };
+		CE74314B26322A1E001F509A /* BookingHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryView.swift; sourceTree = "<group>"; };
 		CE773F37262F4366004A55B1 /* FoodCategoriesItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoriesItemView.swift; sourceTree = "<group>"; };
 		CE773F3C262F5E55004A55B1 /* RestarauntItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestarauntItemView.swift; sourceTree = "<group>"; };
 		CE773F40262F79D6004A55B1 /* DineInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DineInView.swift; sourceTree = "<group>"; };
-		CE773F45262F7AC7004A55B1 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
-		CE773F48262F7F38004A55B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CE773F4B262F7F51004A55B1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE91C08C2615B4E2004C110A /* BookRestaurantTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRestaurantTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91C08F2615B4E2004C110A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE91C0912615B4E2004C110A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +72,7 @@
 		CE91C09E2615B4E3004C110A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE91C0A02615B4E3004C110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB13CAF262D786600E32913 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		CECC140A262E3077002B90BD /* Test1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1View.swift; sourceTree = "<group>"; };
+		CEBBBF1C263169BA005C0FCB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		CECC1410262E5766002B90BD /* SplashscreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenViewModel.swift; sourceTree = "<group>"; };
 		CECC1415262E57BF002B90BD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CECC141F262E5A02002B90BD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -92,9 +110,11 @@
 				CED66DB42629A685002523CC /* RestarauntsDetailsView.swift */,
 				CED66DB72629A8A9002523CC /* OrderSummaryView.swift */,
 				CE773F40262F79D6004A55B1 /* DineInView.swift */,
-				CE6BA92E26298509004F014C /* SwiftUIView.swift */,
+				CE207EC2263189C500283BA1 /* OrdersView.swift */,
+				CE743148263229F8001F509A /* SelectFoodViewView.swift */,
+				CEBBBF1C263169BA005C0FCB /* AccountView.swift */,
 				CEB13CAF262D786600E32913 /* TestView.swift */,
-				CECC140A262E3077002B90BD /* Test1View.swift */,
+				CE74314B26322A1E001F509A /* BookingHistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,9 +139,12 @@
 		CE773F44262F7AA0004A55B1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE773F45262F7AC7004A55B1 /* SplashScreenViewController.swift */,
-				CE773F48262F7F38004A55B1 /* LoginViewController.swift */,
-				CE773F4B262F7F51004A55B1 /* RegisterViewController.swift */,
+				CE7431182631D123001F509A /* LoginViewController.swift */,
+				CE743127263203B2001F509A /* RegistrationViewController.swift */,
+				CE74313026321270001F509A /* SplashscreenViewController.swift */,
+				CE74313326321910001F509A /* HomeViewController.swift */,
+				CE7431362632193E001F509A /* OrdersViewController.swift */,
+				CE7431392632195F001F509A /* AccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,8 +193,8 @@
 		CE91C0A82615B514004C110A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				CE91C08F2615B4E2004C110A /* AppDelegate.swift */,
 				CE91C0912615B4E2004C110A /* SceneDelegate.swift */,
+				CE91C08F2615B4E2004C110A /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -186,8 +209,12 @@
 		CED66DA32629A073002523CC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CECC1410262E5766002B90BD /* SplashscreenViewModel.swift */,
 				CECC1415262E57BF002B90BD /* LoginViewModel.swift */,
+				CECC1410262E5766002B90BD /* SplashscreenViewModel.swift */,
+				CE74312A26320435001F509A /* RegistrationViewModel.swift */,
+				CE74313C2632197D001F509A /* HomeViewModel.swift */,
+				CE74313F2632198B001F509A /* OrdersViewModel.swift */,
+				CE7431422632199B001F509A /* AccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -271,27 +298,36 @@
 			files = (
 				CEB13CB0262D786600E32913 /* TestView.swift in Sources */,
 				CED66DB52629A685002523CC /* RestarauntsDetailsView.swift in Sources */,
-				CE773F46262F7AC7004A55B1 /* SplashScreenViewController.swift in Sources */,
+				CE7431372632193E001F509A /* OrdersViewController.swift in Sources */,
 				CED66DB22629A55E002523CC /* RestarauntsView.swift in Sources */,
 				CED66DB82629A8A9002523CC /* OrderSummaryView.swift in Sources */,
 				CE060991261721C00005E066 /* SplashscreenView.swift in Sources */,
 				CECC1420262E5A02002B90BD /* HomeView.swift in Sources */,
 				CED66DAF2629A4EC002523CC /* FoodCategoryView.swift in Sources */,
-				CECC140B262E3077002B90BD /* Test1View.swift in Sources */,
+				CE74312B26320435001F509A /* RegistrationViewModel.swift in Sources */,
+				CE74314C26322A1E001F509A /* BookingHistoryView.swift in Sources */,
+				CE7431432632199B001F509A /* AccountViewModel.swift in Sources */,
 				CED66DA62629A116002523CC /* LoginView.swift in Sources */,
-				CE773F49262F7F38004A55B1 /* LoginViewController.swift in Sources */,
+				CE743149263229F8001F509A /* SelectFoodViewView.swift in Sources */,
 				CE91C09A2615B4E2004C110A /* BookRestaurantTable.xcdatamodeld in Sources */,
+				CE74313D2632197D001F509A /* HomeViewModel.swift in Sources */,
+				CEBBBF1D263169BA005C0FCB /* AccountView.swift in Sources */,
+				CE7431192631D123001F509A /* LoginViewController.swift in Sources */,
+				CE74313426321910001F509A /* HomeViewController.swift in Sources */,
+				CE743128263203B2001F509A /* RegistrationViewController.swift in Sources */,
 				CECC1416262E57BF002B90BD /* LoginViewModel.swift in Sources */,
-				CE6BA92F26298509004F014C /* SwiftUIView.swift in Sources */,
-				CE773F4C262F7F51004A55B1 /* RegisterViewController.swift in Sources */,
+				CE207EC3263189C500283BA1 /* OrdersView.swift in Sources */,
 				CE773F3D262F5E55004A55B1 /* RestarauntItemView.swift in Sources */,
+				CE74313A2632195F001F509A /* AccountViewController.swift in Sources */,
 				CE773F41262F79D6004A55B1 /* DineInView.swift in Sources */,
 				CE91C0942615B4E2004C110A /* ViewController.swift in Sources */,
 				CE91C0902615B4E2004C110A /* AppDelegate.swift in Sources */,
 				CECC1411262E5766002B90BD /* SplashscreenViewModel.swift in Sources */,
 				CE91C0922615B4E2004C110A /* SceneDelegate.swift in Sources */,
 				CED66DA92629A3C6002523CC /* RegistrationView.swift in Sources */,
+				CE74313126321270001F509A /* SplashscreenViewController.swift in Sources */,
 				CE773F38262F4366004A55B1 /* FoodCategoriesItemView.swift in Sources */,
+				CE7431402632198B001F509A /* OrdersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

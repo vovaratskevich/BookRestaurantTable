@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct RegistrationView: View {
+    @ObservedObject var state:RegistrationState
     @State var Email = ""
     @State var Password = ""
     @State var Password2 = ""
     @State var isSecured = true
     @State var isSecured2 = true
+    
     var body: some View {
         VStack (spacing: 10)  {
             
@@ -39,14 +41,9 @@ struct RegistrationView: View {
                     .frame(width: 327, height: 24)
                 
                 TextField("", text: $Email)
-                    .frame(width: 24, height: 24)
-                    .padding(.vertical, 12)
-                    .padding(.leading, 287)
-                    .padding(.trailing, 16)
                     .frame(width: 327, height: 48)
                     .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                     .cornerRadius(8)
-                    .padding(.top, 1)
                 
                 Text("Password")
                     .foregroundColor(.gray)
@@ -61,20 +58,12 @@ struct RegistrationView: View {
                 ZStack(alignment: .trailing) {
                     if isSecured {
                         SecureField("", text: $Password)
-                            .frame(width: 24, height: 24)
-                            .padding(.vertical, 12)
-                            .padding(.leading, 287)
-                            .padding(.trailing, 16)
                             .frame(width: 327, height: 48)
                             .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                             .cornerRadius(8)
                     }
                     else {
                         TextField("", text: $Password)
-                            .frame(width: 24, height: 24)
-                            .padding(.vertical, 12)
-                            .padding(.leading, 287)
-                            .padding(.trailing, 16)
                             .frame(width: 327, height: 48)
                             .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                             .cornerRadius(8)
@@ -82,7 +71,7 @@ struct RegistrationView: View {
                     Button(action: {
                         isSecured.toggle()
                     }) {
-                        Image(uiImage: self.isSecured ? #imageLiteral(resourceName: "hide") : #imageLiteral(resourceName: "hide2"))
+                        Image(uiImage: self.isSecured ? #imageLiteral(resourceName: "hide2") : #imageLiteral(resourceName: "hide"))
                     }
                     .padding(.trailing,10)
                 }
@@ -100,20 +89,12 @@ struct RegistrationView: View {
                 ZStack(alignment: .trailing) {
                     if isSecured2 {
                         SecureField("", text: $Password2)
-                            .frame(width: 24, height: 24)
-                            .padding(.vertical, 12)
-                            .padding(.leading, 287)
-                            .padding(.trailing, 16)
                             .frame(width: 327, height: 48)
                             .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                             .cornerRadius(8)
                     }
                     else {
                         TextField("", text: $Password2)
-                            .frame(width: 24, height: 24)
-                            .padding(.vertical, 12)
-                            .padding(.leading, 287)
-                            .padding(.trailing, 16)
                             .frame(width: 327, height: 48)
                             .background(Color(red: 0.96, green: 0.96, blue: 0.96))
                             .cornerRadius(8)
@@ -121,7 +102,7 @@ struct RegistrationView: View {
                     Button(action: {
                         isSecured2.toggle()
                     }) {
-                        Image(uiImage: self.isSecured2 ? #imageLiteral(resourceName: "hide") : #imageLiteral(resourceName: "hide2"))
+                        Image(uiImage: self.isSecured2 ? #imageLiteral(resourceName: "hide2") : #imageLiteral(resourceName: "hide"))
                     }
                     .padding(.trailing,10)
                 }
@@ -130,7 +111,7 @@ struct RegistrationView: View {
                 Button(action: {
                     // What to perform
                 }) {
-                    Text("Sign in")
+                    Text("Sign up")
                         .foregroundColor(.white)
                     .fontWeight(.semibold)
                     .font(.body)
@@ -143,14 +124,16 @@ struct RegistrationView: View {
                 .padding(.top,15)
                 
                 HStack {
-                    Text("Don’t have an account?")
+                    Text("Already have an account?")
                         .font(.footnote)
                     
                     Button(action: {
                         // What to perform
+                        self.state.controller?.goToLogin()
                     }) {
-                    Text("Sign up")
-                    .font(.footnote)
+                    Text("Sign in")
+                        .font(.footnote)
+                        .foregroundColor(.black)
                     
                     }
                 }
@@ -176,6 +159,6 @@ struct RegistrationView: View {
 
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationView()
+        RegistrationView(state: RegistrationState())
     }
 }

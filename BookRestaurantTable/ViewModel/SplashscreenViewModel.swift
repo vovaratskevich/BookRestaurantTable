@@ -8,9 +8,8 @@ import Foundation
 import UIKit
 import SwiftUI
 
-
-/*
-final class SplashScreenState:ObservableObject{
-    var controller: SplashScreenViewController?
+final class SplashscreenState: ObservableObject {
+    var controller: SplashscreenViewController?
+    
+    
 }
-*/

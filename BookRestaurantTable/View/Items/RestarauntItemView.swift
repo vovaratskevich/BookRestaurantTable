@@ -10,7 +10,7 @@ import SwiftUI
 struct RestarauntItemView: View {
     var pathImage:String = "Rectangle1"
     var nameRestaraunt:String = "Hi-Collar"
-    var rating:String = "4.5"
+    var ratingRestaraunt:String = "4.5"
     var numberOfRatings:String = "349"
     @State var isFavorite:Bool = false
     @State var isRestarauntsScreen:Bool = false
@@ -57,7 +57,7 @@ struct RestarauntItemView: View {
                     .foregroundColor(.yellow)
                     .frame(width: 16, height: 16)
                 
-                Text(rating)
+                Text(ratingRestaraunt)
                 .font(.footnote)
                 
                 Text("(" + numberOfRatings + ")")
